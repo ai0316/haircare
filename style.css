@@ -1,0 +1,559 @@
+@charset "utf-8";
+body{
+    font-size: 16px;
+    color: #674a4f;
+    font-family: "Shippori Mincho", serif;
+    background-color: #F5F1EE;
+}
+body,div,p,ul,figure{
+    margin: 5;
+    padding: 0%;
+}
+h2{
+    font-size: 40px;
+    margin-top: 50px;
+}
+/* ナビゲーション */
+.navbar{
+    display: flex !important;
+    justify-content: flex-end;
+    list-style: none;
+}
+.navbar li a{
+    display: block;
+    padding:  7px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #433535;
+}
+/* nav{
+    align-items: center;
+} */
+ .logo{
+    top:30vh;
+ }
+.home-maincopy{
+    font-size: 31px;
+    text-align: center;
+    color: #812620;
+}
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.pic1_2{
+    clip-path: inset(17% 0 22% 0);
+}
+.img-responsive2{
+    display: block;
+}
+.float-box{
+    float: right;
+}
+.float-clear{
+    overflow: hidden;
+}
+.pic2 img{
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: 60%;
+    float: left;
+}
+
+.pic3 img{
+    border-radius: 120px;
+    width: 50%;
+    float: right;
+}
+
+.float-box2{
+    float: left;
+}
+.float-clear2{
+    overflow: hidden;
+}
+.b2{
+    background-color: #fff;
+    border-radius: 8px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 0;
+
+}
+.w2{
+    background-color: #fff;
+    border-radius: 8px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 0;
+}
+ul{
+    list-style: none;
+}
+.pic6 img{
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;    
+}
+@media screen and (max-width: 768px)  {
+  .pic6 img{
+    width: 300px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+  }
+}
+
+.pic8 img{
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+@media screen and (max-width: 768px)  {
+  .pic8 img{
+    width: 300px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+  }
+}
+.pic8{
+    text-align: center;
+}
+.pic4 img{
+    border-radius: 8px;
+    margin: 15px auto;
+}
+.pic5 img{
+    border-radius: 8px;
+    margin: 15px auto;
+}
+figcaption{
+    text-align: center;
+    margin: 10px;
+}
+figcaption p{
+    color: #674A4E;
+}
+span{
+    color: #D0596D;
+}
+.text{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+HTML CSSResult Skip Results Iframe
+EDIT ON
+.button a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 230px;
+    padding: 10px 0px 10px 25px;
+    font-family: "Noto Sans Japanese";
+    line-height: 1.8;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.button a:before, .button a:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+}
+.button a:before {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 1.1rem;
+  border-top: solid 2px #333;
+  border-right: solid 2px #333;
+  z-index: 2;
+  transform: translateY(-50%) rotate(45deg);
+  transition: all 0.3s;
+}
+.button a:after {
+  left: 0;
+  background: #eee;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 4rem;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+}
+.button a span {
+  position: relative;
+  transition: all 0.3s;
+  z-index: 3;
+}
+
+.button a:hover span {
+  color: #fff;
+}
+.button a:hover:before {
+  left: 2.5rem;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+}
+.button a:hover:after {
+  right: 0;
+  width: 100%;
+  background: #333;
+}
+
+body{
+    vertical-align:middle; 
+    padding: 70px 0;
+    text-align: center;
+}
+
+/* 003 */
+.button003 a {
+    background: #eee;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 260px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button003 a:hover {
+    background: #513232;
+    color: #FFF;
+}
+.button003 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #313131;
+    border-right: 3px solid #313131;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button003 a:hover:after {
+    border-color: #FFF;
+}
+
+/* 012 */
+.button012 a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px 10px 50px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #eee;
+    border-radius: 50px;
+    z-index:0;
+    overflow: hidden;
+}
+.button012 a:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f005";
+    line-height: 1;
+    position: absolute;
+    left: 5px;
+    background: #FFF;
+    padding: 12px 11px;
+    border-radius: 60px;
+    z-index: 2;
+}
+.button012 a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    display: block;
+    background: #ccc;
+    transition: .3s;
+    left:0;
+}
+.button012 a:hover:after {
+    width: 100%;
+    z-index: -1;
+}
+
+.matrix .bg-wrap,
+.matrix .bg-wrap .inn {
+  display: block;
+}
+ 
+.matrix .bg-wrap {
+  overflow: hidden;
+  opacity: 0;
+}
+ 
+.matrix .bg-wrap + .bg-wrap {
+  margin-top: 10px;
+}
+ 
+.matrix .bg-wrap .inn.large {
+  font-size: 36px;
+  font-weight: bold;
+}
+.matrix .bg-wrap .inn.small {
+  font-size: 15px;
+}
+ 
+.matrix .bg-wrap .inn {
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, 0, 100);
+  transition: 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+ 
+.matrix.is-animated .bg-wrap {
+  opacity: 1;
+}
+ 
+.matrix.is-animated .bg-wrap .inn {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+ 
+/* フッター */
+footer{
+    background-color: #674a4f;
+    color: #fff;
+}
+footer ul li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 2;
+    margin: 25px;
+}
+footer p{
+    text-align: center;
+}
+
+.matrix .bg-wrap,
+.matrix .bg-wrap .inn {
+  display: block;
+}
+ 
+.matrix .bg-wrap {
+  overflow: hidden;
+  opacity: 0;
+}
+ 
+.matrix .bg-wrap + .bg-wrap {
+  margin-top: 10px;
+}
+ 
+.matrix .bg-wrap .inn.large {
+  font-size: 36px;
+  font-weight: bold;
+}
+.matrix .bg-wrap .inn.small {
+  font-size: 15px;
+}
+ 
+.matrix .bg-wrap .inn {
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, 0, 100);
+  transition: 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+ 
+.matrix.is-animated .bg-wrap {
+  opacity: 1;
+}
+ 
+.matrix.is-animated .bg-wrap .inn {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+/* --- レスポンシブデザイン --- */
+@media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* 縦に並べる */
+      text-align: center;
+    }
+  
+    .navbar li a {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .home-maincopy {
+      font-size: 24px;
+      padding: 10px;
+    }
+  
+    .float-box,
+    .float-box2 {
+      width: 100%; /* 横幅を画面サイズに合わせる */
+      text-align: center;
+      float: none;
+    }
+  
+
+    .pic3 img {
+      width: 60%; /* 画像サイズを調整 */
+      margin: 0 auto;
+      border-radius: 200px;
+    }
+
+    .pic2 img {
+      width: 60%; /* 画像サイズを調整 */
+      margin: 0 auto;
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 200px;
+    }
+
+  
+    .b2, .w2 {
+      width: 90%; /* カードの幅を狭く */
+      margin: 10px auto;
+    }
+  }
+  
+  /* --- アニメーション --- */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .section:nth-child(even) {
+    animation-delay: 0.3s;
+  }
+  
+  .button012 a:hover {
+    background: #d0596d;
+    color: #fff;
+    transform: scale(1.05); /* 少し拡大 */
+  }
+  
+  .section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+/*アコーディオン全体*/
+.accordion-area{
+  list-style: none;
+  width: 96%;
+  max-width: 900px;
+  margin:0 auto;
+}
+
+.accordion-area li{
+  margin: 10px 0;
+}
+
+.accordion-area section {
+border: 1px solid #ccc;
+}
+
+/*アコーディオンタイトル*/
+.title {
+  position: relative;/*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  font-size:1rem;
+  font-weight: normal;
+  padding: 3% 3% 3% 50px;
+  transition: all .5s ease;
+}
+
+/*アイコンの＋と×*/
+.title::before,
+.title::after{
+  position: absolute;
+  content:'';
+  width: 15px;
+  height: 2px;
+  background-color: #333;
+  
+}
+.title::before{
+  top:48%;
+  left: 15px;
+  transform: rotate(0deg);
+  
+}
+.title::after{    
+  top:48%;
+  left: 15px;
+  transform: rotate(90deg);
+
+}
+
+/*　closeというクラスがついたら形状変化　*/
+
+.title.close::before{
+transform: rotate(45deg);
+}
+
+.title.close::after{
+transform: rotate(-45deg);
+}
+
+/*アコーディオンで現れるエリア*/
+.box {
+  display: none;/*はじめは非表示*/
+  background: #f3f3f3;
+margin:0 3% 3% 3%;
+  padding: 3%;
+}
+
+/*infoエリアをはじめは非表示*/
+#info{
+	display: none;
+}
+
+/*モーダルの横幅を変更したい場合*/
+.modaal-container{
+    max-width: 600px;
+}
+
+/*モーダルのボタンの色を変更したい場合*/
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+
