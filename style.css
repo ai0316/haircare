@@ -1,18 +1,42 @@
 @charset "utf-8";
 body{
+    font-size: 30px;
+    color: #674a4f;
+    font-family: "Shippori Mincho", serif;
+    background-color: #F5F1EE;
+    line-height: 2;
+}
+@media screen and (max-width: 768px)  {
+  body{
     font-size: 16px;
     color: #674a4f;
     font-family: "Shippori Mincho", serif;
     background-color: #F5F1EE;
+    line-height: 2;
 }
+  }
+
 body,div,p,ul,figure{
     margin: 5;
     padding: 0%;
 }
 h2{
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 50px;
 }
+@media screen and (max-width: 768px)  {
+  h2{
+    font-size: 25px;
+  }
+  }
+h1{
+  font-size: 60px;
+}
+@media screen and (max-width: 768px)  {
+  h1{
+    font-size: 30px;
+  }
+  }
 /* ナビゲーション */
 .navbar{
     display: flex !important;
@@ -43,9 +67,7 @@ h2{
     height: auto;
     margin: 0 auto;
 }
-.pic1_2{
-    clip-path: inset(17% 0 22% 0);
-}
+
 .img-responsive2{
     display: block;
 }
@@ -56,15 +78,15 @@ h2{
     overflow: hidden;
 }
 .pic2 img{
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    width: 60%;
+    border-top-right-radius: 250px;
+    border-bottom-right-radius: 250px;
+    width: 50%;
     float: left;
 }
 
 .pic3 img{
-    border-radius: 120px;
-    width: 50%;
+    border-radius: 300px;
+    width: 40%;
     float: right;
 }
 
@@ -76,8 +98,8 @@ h2{
 }
 .b2{
     background-color: #fff;
-    border-radius: 8px;
-    width: 300px;
+    border-radius: 45px;
+    width: 450px;
     margin: 10px;
     text-align: center;
     margin: 20px auto;
@@ -86,8 +108,8 @@ h2{
 }
 .w2{
     background-color: #fff;
-    border-radius: 8px;
-    width: 300px;
+    border-radius: 45px;
+    width: 450px;
     margin: 10px;
     text-align: center;
     margin: 20px auto;
@@ -97,8 +119,9 @@ ul{
     list-style: none;
 }
 .pic6 img{
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;    
+    border-top-left-radius: 340px;
+    border-top-right-radius: 340px;  
+    width: 40%;  
 }
 @media screen and (max-width: 768px)  {
   .pic6 img{
@@ -109,8 +132,9 @@ ul{
 }
 
 .pic8 img{
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+  border-top-left-radius: 340px;
+  border-top-right-radius: 340px;  
+  width: 40%;  
 }
 @media screen and (max-width: 768px)  {
   .pic8 img{
@@ -123,13 +147,31 @@ ul{
     text-align: center;
 }
 .pic4 img{
-    border-radius: 8px;
+    border-radius: 30px;
     margin: 15px auto;
+    width: 300px;
 }
+@media screen and (max-width: 768px)  {
+  .pic4 img{
+    border-radius: 30px;
+    margin: 15px auto;
+    width: 300px;
+}
+}
+
 .pic5 img{
-    border-radius: 8px;
-    margin: 15px auto;
+  border-radius: 30px;
+  margin: 15px auto;
+  width: 300px;
 }
+@media screen and (max-width: 768px)  {
+  .pic5 img{
+    border-radius: 30px;
+    margin: 15px auto;
+    width: 300px;
+}
+}
+
 figcaption{
     text-align: center;
     margin: 10px;
@@ -211,7 +253,7 @@ EDIT ON
 
 body{
     vertical-align:middle; 
-    padding: 70px 0;
+    /* padding: 70px 0; */
     text-align: center;
 }
 
@@ -415,7 +457,7 @@ footer p{
     }
 
     .pic2 img {
-      width: 60%; /* 画像サイズを調整 */
+      width: 80%; /* 画像サイズを調整 */
       margin: 0 auto;
       border-top-right-radius: 200px;
       border-bottom-right-radius: 200px;
@@ -427,7 +469,7 @@ footer p{
       margin: 10px auto;
     }
   }
-  
+
   /* --- アニメーション --- */
   @keyframes fadeIn {
     from {
@@ -557,3 +599,152 @@ margin:0 3% 3% 3%;
 	background:#666;
 }
 
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider img {
+  width:100%;/*スライダー内の画像を横幅100%に*/
+  height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+  margin:0;/*スライド左右の余白調整*/
+}
+
+
+/* ハンバーガーメニュー */
+.nav-icon {
+  display: none;  /* パソコンではハンバーガーメニューは非表示 */
+  width: 40px;  /* ハンバーガーメニューの大きさ */
+  padding: 8px 8px;
+  background: #5f051d;  /* ハンバーガーメニューの色 */
+  transition: .5s ease-in-out;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.nav-icon span {
+  height: 3px;
+  width: 70%;
+  background: #ffffff;  /* ハンバーガーメニューの3本線の色 */
+  border-radius: 9px;
+  opacity: 1;
+  left: 15%;
+  transition: .25s ease-in-out;
+  display: block;
+  position: absolute;
+}
+
+.nav-icon span:nth-child(1) {
+  top: 7px;
+}
+
+.nav-icon span:nth-child(2) {
+  top: 15px;
+}
+
+.nav-icon span:nth-child(3) {
+  top: 23px;
+}
+
+.nav-icon.open span:nth-child(1) {
+  top: 15px;
+  transform: rotate(45deg);
+}
+
+.nav-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-icon.open span:nth-child(3) {
+  top: 15px;
+  transform: rotate(-45deg);
+}
+
+
+p.nav-text {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+.nav-menu .gnavi {
+  display: none; /* パソコンとスマホ両方で初期状態はメニューは非表示 */
+}
+
+.clearfix:after {
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  clear: both;
+  content: ' ';
+  display: block;
+  visibility: hidden;
+}
+/* ハンバーガーメニュー */
+.nav-icon {
+  display: block; /* スマホ画面で表示 */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2000;
+}
+@media screen and (min-width: 768px) {
+  .nav-icon {
+    display: none;  /* パソコンではハンバーガーメニューは非表示 */
+}}
+
+.nav-menu {
+  background-color: #4c1f24;  /* ナビゲーションメニューの背景色 */
+  position: fixed;
+  top: 0;
+  left: 20px;
+  width: 100%;
+  max-height: 100vh;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.nav-menu .gnavi {
+  display: none; /* ハンバーガーメニューがクリックされる前はメニューを非表示 */
+}
+
+.nav-menu .gnavi li {
+  float: left;
+  text-align: center;
+  border-bottom: 1px solid #eeeeee;
+  padding: 0;
+  width: 100%;
+  display: block;
+}
+
+.nav-menu .gnavi li a {
+  color: #ffffff; /* メニューの文字の色 */
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px 20px;
+  display: block;
+}
+
+.nav-menu .gnavi ul {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navpc{
+  display: none;
+}
+}
+
+.modal-open{
+  color: #D0596D;
+}
+.sindan{
+  color: #D0596D;
+  text-align: none;
+}

@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kosugi+Maru&family=Monomaniac+One&family=Noto+Serif+JP:wght@200..900&family=Rampart+One&family=Shippori+Mincho&family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
-    <link rel="stylesheet" type="text/css" href="css/9-6-1.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="css/6-1-8.css">
 </head>
     <body>
     <!-- header -->
      <header>
-        <nav>
+        <nav class="navpc">
             <ul class="navbar">
                 <li>        <div class="logo">
                     <img src="images/logo.png" width="60" alt="logo" class="img-responsive2">
@@ -30,11 +31,24 @@
     <!-- /header -->
     
     <!-- kyevisual -->
-     <a name="top"><div class="home-keyvisual"></a>
-        <div class="pic1">
-            <img src="images/1.jpg" class="img-responsive" width="1000" height="660" alt="イメージ画像">
-        </div>
-     </div>
+                <ul class="slider">
+            <li>                
+                <img src="images/1.jpg"alt="イメージ画像">
+            </li>
+            <li>                
+                <img src="images/9.jpg"alt="イメージ画像">
+            </li>
+            <li>                
+                <img src="images/10.jpg"alt="イメージ画像">
+            </li>
+            <li>                
+                <img src="images/8.jpg"alt="イメージ画像">
+            </li>
+            <li>                
+                <img src="images/11.jpg"alt="イメージ画像">
+            </li>
+
+            <!--/slider--></ul>
     <!-- /keyvisual -->
 
     <!-- main -->
@@ -45,6 +59,18 @@
                     髪にとろけるショコラの魔法</h1>
                   </section>
                   
+                <!--リンク元のHTMLリンク先は表示させたいエリアのid名を指定します。-->
+                <p><a href="#info" class="modal-open">ChocoVelour診断
+                </a></p>
+                <!--表示エリアのHTML。id 名にリンク先と同じ名前を指定します。※表示エリアはHTML の変更が可能なので、レイアウトを自由に変更できます。-->
+                <section id="info">
+                    <h2>あなたにピッタリなChocoVelourは？</h2>
+                    <p>あなたの髪タイプに合ったアイテムをご紹介します。 </p>
+                    <a href="select.html" class="sindan">今すぐ診断</a>
+                    </section>
+                
+                
+
         <!-- concept -->
         <a name="concept"><div class="container" id="concept"></a>
                         <div class="float-clear">
@@ -92,7 +118,7 @@
                                 <li class="w">
                                     <figure>
                                         <div class="pic8">
-                                        <img src="images/8.jpg" width="200" alt="ホワイトver">
+                                        <img src="images/5.jpg" width="200" alt="ホワイトver">
                                         </div>
                                         <figcaption>     
                                             <h3>デイタイムや仕事用<br>軽い仕上がりで動きのあるスタイリングをしたい日</h3>                           
@@ -108,15 +134,6 @@
 
                     </div>
         <!-- /concept -->
-
-                <!--リンク元のHTMLリンク先は表示させたいエリアのid名を指定します。-->
-<p><a href="#info" class="modal-open">ChocoVelour診断
-</a></p>
-<!--表示エリアのHTML。id 名にリンク先と同じ名前を指定します。※表示エリアはHTML の変更が可能なので、レイアウトを自由に変更できます。-->
-<section id="info">
-    <h2>あなたにピッタリなChocoVelourは？</h2>
-    <p>あなたの髪タイプに合ったアイテムをご紹介します。 </p>
-    </section>
 
 
         <!-- product -->
@@ -184,9 +201,51 @@
         <p>&copy; 2024 istyle</p>
      </footer>
     <!-- /footer -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-<!--自作のJS-->
-<script src="js/9-6-1.js"></script>
-</body></html>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <!--自作のJS-->
+    <script src="js/9-6-1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--自作のJS-->
+    <script src="js/6-1-8.js"></script>
+
+    <!-- ハンバーガーメニュー -->
+<div class="nav-icon">
+    <span></span><span></span><span></span>
+    <p class="nav-text">menu</p>
+  </div>
+  
+  <div class="nav-menu">
+    <nav class="gnavi clearfix">
+    <ul>
+      <li><a href="#top">TOP</a></li>
+      <li><a href="#concept">CONCEPT</a></li>
+      <li><a href="#product">PRODUCT</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+    </ul>
+    </nav>
+  </div>
+  
+  
+  <!-- ハンバーガーメニューのjQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  <script>
+  jQuery(function($) {
+    $('.nav-icon').click(function() {
+      $(this).toggleClass('open');
+      $('.gnavi').slideToggle();
+    });
+  
+    $(window).resize(function() {
+      if ($(window).width() >= 768) {
+        $('.gnavi').hide();
+      }
+    });
+  });
+  </script>
+  
+    </body></html>

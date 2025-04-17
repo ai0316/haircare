@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
-</head>
-<body>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,20 +12,21 @@
 </head>
 <body>
     <!-- header -->
-     <header>
-        <nav>
+    <header>
+        <nav class="navpc">
             <ul class="navbar">
                 <li>        <div class="logo">
-                    <img src="images/logo.png" width="60" alt="logo" class="img-responsive2" >
+                    <img src="images/logo.png" width="60" alt="logo" class="img-responsive2">
                 </div>   </li>
                 <li><a href="index.html">TOP</a></li>
-                <li><a href="index.html#concept">CONCEPT</a></li> 
+                <li><a href="index.html#concept">CONCEPT</a></li>
                 <li><a href="index.html#product">PRODUCT</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="shop.html">SHOP</a></li>
             </ul>
      </nav>
      </header>
+    <!-- /header -->
         <main>
             <h1>よくある質問</h1>
             <ul class="accordion-area">
@@ -65,7 +64,9 @@
                         </section>
                         </li>
         
-                </ul></main>
+                </ul>
+            
+            </main>
 
     <!-- footer -->
     <footer>
@@ -88,6 +89,41 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!--自作のJS-->
     <script src="js/9-2-2.js"></script>
-    </body>
-</body>
-</html>
+    <!-- ハンバーガーメニュー -->
+    <div class="nav-icon">
+        <span></span><span></span><span></span>
+        <p class="nav-text">menu</p>
+      </div>
+      
+      <div class="nav-menu">
+        <nav class="gnavi clearfix">
+        <ul>
+            <li><a href="index.html">TOP</a></li>
+            <li><a href="index.html#concept">CONCEPT</a></li>
+            <li><a href="index.html#product">PRODUCT</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+        </ul>
+        </nav>
+      </div>
+      
+      
+      <!-- ハンバーガーメニューのjQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      
+      <script>
+      jQuery(function($) {
+        $('.nav-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.gnavi').slideToggle();
+        });
+      
+        $(window).resize(function() {
+          if ($(window).width() >= 768) {
+            $('.gnavi').hide();
+          }
+        });
+      });
+      </script>
+      
+        </body></html>
